@@ -78,6 +78,10 @@ matplotlib
 ```bash
 streamlit run TIENDA_OSIL.py
 ```
+ó
+```bash
+streamlit run '.\TIENDA OSIL.py'
+```
 
 Streamlit abrirá automáticamente el navegador en `http://localhost:8501`.  
 Si no se abre solo, copia esa URL y pégala en tu navegador.
