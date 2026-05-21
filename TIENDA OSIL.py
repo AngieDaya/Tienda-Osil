@@ -840,7 +840,7 @@ def pagina_ventas():
             prod_info = next((p for p in inventario if p["Nombre"] == prod_venta), None)
             stock_actual = prod_info["Cantidad"] if prod_info else 0
             st.markdown(f"**Stock disponible:** {stock_actual} unidades")
-            cantidad_venta = st.number_input("Cantidad a vender", min_value=1, max_value=stock_actual, step=1, key="venta_cantidad")
+            cantidad_venta = st.number_input("Cantidad a vender", min_value=0, max_value=stock_actual, step=1, key="venta_cantidad")
 
         if prod_info:
             subtotal = prod_info["Precio"] * cantidad_venta
