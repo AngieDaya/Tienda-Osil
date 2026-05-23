@@ -47,15 +47,6 @@ html, body, [class*="css"] {
     color: #f0ece0 !important;
 }
 
-/* Tarjeta / contenedor */
-.osil-card {
-    background: #161616;
-    border: 1px solid #2c2c2c;
-    border-radius: 12px;
-    padding: 1.5rem 2rem;
-    margin-bottom: 1rem;
-}
-
 /* Título principal */
 .osil-title {
     font-family: "Oswald", sans-serif;
@@ -73,7 +64,7 @@ html, body, [class*="css"] {
     margin-top: 0.2rem;
 }
 
-/* Badge de rango */
+/* Badge de rango. Estilo para el badge que muestra el rango del usuario (jefe, gerente o empleado) junto a su nombre en la barra lateral, con colores distintivos para cada rango y un diseño moderno y llamativo para resaltar esa información importante. */
 .badge {
     display: inline-block;
     padding: 3px 12px;
@@ -84,11 +75,11 @@ html, body, [class*="css"] {
     text-transform: uppercase;
     letter-spacing: 0.08em;
 }
-.badge-jefe    { background: #428af5; color: #0d0d0d; }
+.badge-jefe    { background: #cfd916; color: #0d0d0d; }
 .badge-gerente { background: #4ade80; color: #0d0d0d; }
 .badge-empleado{ background: #60a5fa; color: #0d0d0d; }
 
-/* Métricas personalizadas */
+/* Métricas personalizadas. Estilo para las cajas de métricas en el dashboard, que muestran información clave como total de productos, unidades en stock, ventas realizadas e ingresos totales, con un diseño moderno y llamativo para destacar esos datos importantes. */
 .metric-box {
     background: #1c1c1c;
     border: 1px solid #2c2c2c;
@@ -96,13 +87,13 @@ html, body, [class*="css"] {
     padding: 1rem 1.4rem;
     text-align: center;
 }
-.metric-value {
+.metric-value { /*estilo para el valor principal de la métrica, como el número total de productos o el ingreso total, con una fuente grande y llamativa para destacar esa información clave dentro de la caja de la métrica. */
     font-family: 'Space Mono', monospace;
     font-size: 1.9rem;
     font-weight: 700;
     color: #428af5;
 }
-.metric-label {
+.metric-label { /*estilo para la etiqueta de la métrica, que describe qué representa el valor principal (por ejemplo, "Productos" o "Ingresos totales"), con una fuente más pequeña y un color más suave para complementar el valor principal sin restarle protagonismo. */
     font-size: 0.75rem;
     color: #888;
     text-transform: uppercase;
@@ -110,7 +101,7 @@ html, body, [class*="css"] {
     margin-top: 2px;
 }
 
-/* Inputs */
+/* Inputs. Estilo para los campos de entrada de texto, números y selectbox en toda la aplicación, con un fondo oscuro, bordes suaves y una fuente monoespaciada para dar un aspecto moderno y tecnológico a los formularios de la aplicación. */
 .stTextInput > div > div > input,
 .stNumberInput > div > div > input,
 .stSelectbox > div > div {
@@ -121,7 +112,7 @@ html, body, [class*="css"] {
     font-family: 'Space Mono', monospace !important;
 }
 
-/* Botones */
+/* Botones. Estilo para los botones en toda la aplicación, con un fondo azul, texto blanco y una transición suave para mejorar la experiencia del usuario. */
 .stButton > button {
     background: #428af5 !important;
     color: #0d0d0d !important;
@@ -132,35 +123,35 @@ html, body, [class*="css"] {
     padding: 0.5rem 1.5rem !important;
     transition: all 0.2s ease !important;
 }
-.stButton > button:hover {
+.stButton > button:hover { /*estilo para el estado hover de los botones, que cambia el fondo a un "amarillo" más claro, eleva ligeramente el botón y agrega una sombra para dar un efecto de profundidad y resaltar la interactividad del botón cuando el usuario pasa el cursor sobre él. */
     background: #ffd966 !important;
-    transform: translateY(-1px) !important;
+    transform: translateY(-1px) !important; /*eleva el botón 1 píxel hacia arriba para dar un efecto de "levantar" al hacer hover.
     box-shadow: 0 4px 16px rgba(245,197,66,0.3) !important;
 }
 
-/* Alerts */
+/* Alerts. Estilo para los mensajes de alerta en toda la aplicación, con colores distintivos para cada tipo de alerta (éxito, error, advertencia e información) y un borde izquierdo para resaltar su importancia. */
 .stSuccess { background: #0f2a1a !important; border-left: 3px solid #4ade80 !important; }
 .stError   { background: #2a0f0f !important; border-left: 3px solid #f87171 !important; }
 .stWarning { background: #2a1f0f !important; border-left: 3px solid #fb923c !important; }
 .stInfo    { background: #0f1e2a !important; border-left: 3px solid #60a5fa !important; }
 
-/* Dataframe */
+/* Dataframe. Estilo para las tablas de datos (dataframes) en toda la aplicación, con un fondo oscuro, bordes suaves y una fuente monoespaciada para mejorar la legibilidad y dar un aspecto moderno a las tablas.
 .dataframe { font-family: 'Space Mono', monospace !important; font-size: 0.8rem !important; }
 [data-testid="stDataFrameResizable"] {
-    border: 1px solid #2c2c2c !important;
+    border: 1px solid #2c2c2c !important; /*borde que rodea toda la tabla para darle un aspecto más definido y separado del fondo, con un color oscuro para mantener la estética general de la aplicación. */
     border-radius: 10px !important;
     overflow: hidden !important;
 }
 
-/* Divider */
+/* Divider. Estilo para los divisores (líneas horizontales) en toda la aplicación, con un color oscuro para integrarse con el diseño general y dar una separación visual suave entre secciones de contenido. */
 hr { border-color: #2c2c2c !important; }
 
-/* Tabs */
+/* Tabs. Estilo para las pestañas en toda la aplicación */
 .stTabs [data-baseweb="tab-list"] { background: #161616; border-radius: 10px; padding: 4px; gap: 4px; }
 .stTabs [data-baseweb="tab"] { color: #888 !important; font-family: 'Syne', sans-serif !important; border-radius: 7px !important; }
 .stTabs [aria-selected="true"] { background: #428af5 !important; color: #0d0d0d !important; }
 
-/* Scrollbar */
+/* Scrollbar. Estilo para la barra de desplazamiento (scrollbar) en toda la aplicación. */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: #111; }
 ::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
@@ -227,7 +218,7 @@ def verificar_login(usuario, contraseña):
                     return rango
 
     except FileNotFoundError:
-        return None
+        return None #Si el archivo de usuarios no existe, no se puede verificar el login, así que se devuelve None para indicar que no se encontró ningún usuario válido.
 
     return None
 
@@ -249,13 +240,13 @@ def registrar_usuario(nombre_usuario, contraseña_usuario, rango_usuario):
 
                 nombre, contraseña, rango = datos
 
-                if nombre == nombre_usuario:
+                if nombre == nombre_usuario: #Si el nombre de usuario que se quiere registrar ya existe en el archivo, se marca el estado como True para indicar que ya existe ese usuario, y se sigue leyendo el archivo para mantener el contenido original sin cambios.
                     estado = True
 
                 nuevo_usuario += linea
 
         if estado:
-            return False, "El nombre de usuario ya existe."
+            return False, "El nombre de usuario ya existe." #Si el estado es True, significa que ya se encontró un usuario con ese nombre, por lo que se devuelve False para indicar que no se pudo registrar el nuevo usuario, junto con un mensaje de error.
 
         nuevo_usuario += f"{nombre_usuario}/{contraseña_usuario}/{rango_usuario}\n"
 
@@ -286,7 +277,7 @@ def cambiar_contraseña(usuario, nueva):
 
                 n, c, r = datos
 
-                if n == usuario and not encontrado:
+                if n == usuario and not encontrado: #Si el nombre de usuario coincide con el que se quiere cambiar la contraseña, y aún no se ha encontrado ese usuario en el proceso de lectura del archivo, entonces se actualiza la contraseña en la variable nuevo_texto, manteniendo el mismo formato de nombre/rango pero con la nueva contraseña. Además, se marca encontrado como True para evitar que si hay otro usuario con el mismo nombre (lo cual no debería pasar si el registro de usuarios es correcto) se cambie también su contraseña.
                     nuevo_texto += n + "/" + nueva + "/" + r + "\n"
                     encontrado = True
                 else:
@@ -324,7 +315,7 @@ def leer_inventario():
     except FileNotFoundError:
         pass
 
-    return productos
+    return productos #Si el archivo de inventario no existe, se devuelve una lista vacía, lo que indica que no hay productos registrados en el inventario. Esto permite que la aplicación maneje correctamente la situación de un inventario vacío sin generar errores al intentar leer un archivo inexistente.
 
 
 def buscar_producto(nombre):
@@ -417,7 +408,7 @@ def registrar_venta(nombre, cantidad_vendida):
                         nuevo_inventario += n + "/" + str(nueva_cantidad) + "/" + p + "/" + f + "\n"
                         precio_usado = p
                     else:
-                        stock_insuficiente = True
+                        stock_insuficiente = True #Si la cantidad vendida es mayor que la cantidad disponible en el inventario, se marca stock_insuficiente como True para indicar que no se puede completar la venta debido a falta de stock. En este caso, el inventario no se actualiza y se mantiene la misma cantidad para ese producto.
                         nuevo_inventario += linea
                 else:
                     nuevo_inventario += linea
@@ -446,7 +437,7 @@ def registrar_venta_archivo(nombre, cantidad, precio):
     with open(VENTAS_FILE, "a", encoding="utf-8") as archivo:
         archivo.write(nombre + "/" + str(cantidad) + "/" + str(total) + "/" + fecha + "\n")
 
-    return total
+    return total 
 
 
 def leer_ventas():
@@ -555,7 +546,7 @@ def pantalla_login():
 
         st.markdown("#### Iniciar sesión") #titulo en negrilla
 
-        usuario = st.text_input("Usuario", placeholder="Ingrese su usuario", key="login_usuario")
+        usuario = st.text_input("Usuario", placeholder="Ingrese su usuario", key="login_usuario") #input de texto para el nombre de usuario, con un placeholder que indica al usuario qué debe ingresar, y una clave única para identificar este input en el estado de la sesión (login_usuario)
         contrasena = st.text_input("Contraseña", type="password", placeholder="Ingrese su contraseña", key="login_pass")
 
         if st.session_state.intentos >= 3:
@@ -563,9 +554,9 @@ def pantalla_login():
         else:
             if st.button("Entrar →", use_container_width=True): #el use_container_width hace que el botón ocupe todo el ancho disponible, para que se vea más grande y fácil de clicar
                 if usuario.strip() and contrasena.strip():
-                    rango = verificar_login(usuario.strip().lower(), contrasena.strip())
+                    rango = verificar_login(usuario.strip().lower(), contrasena.strip()) #Se verifica el login con el nombre de usuario y la contraseña ingresados, después de eliminar espacios al principio y al final del nombre de usuario, y convertirlo a minúsculas para evitar problemas de mayúsculas/minúsculas. Si las credenciales son correctas, se devuelve el rango del usuario (jefe, gerente o empleado), que se almacena en la variable rango.
                     if rango:
-                        st.session_state.logged_in = True
+                        st.session_state.logged_in = True #Si el rango es válido (es decir, si las credenciales son correctas), se marca logged_in como True para indicar que el usuario ha iniciado sesión correctamente, y se guardan el nombre de usuario (en minúsculas y sin espacios al principio o al final) y el rango en el estado de la sesión, para que puedan ser utilizados en otras partes de la aplicación. Luego se llama a st.rerun() para reiniciar la aplicación y mostrar la interfaz principal después del login.
                         st.session_state.usuario = usuario.strip().lower()
                         st.session_state.rango = rango
                         st.session_state.intentos = 0
@@ -577,7 +568,7 @@ def pantalla_login():
                 else:
                     st.warning("Por favor complete todos los campos.")
 
-        st.markdown("</div>", unsafe_allow_html=True)
+        st.markdown("</div>", unsafe_allow_html=True) #cierra el div que se abrió al principio del markdown, para que el estilo de esa sección no afecte a otras partes de la aplicación
         st.markdown(
             '<div style="text-align:center;margin-top:1.5rem;font-family:\'Space Mono\',monospace;'
             'font-size:0.7rem;color:#444;">© Tienda OSIL · Todos los derechos reservados</div>',
@@ -588,7 +579,7 @@ def pantalla_login():
 # ─────────────────────────────────────────────
 # SIDEBAR
 # ─────────────────────────────────────────────
-def render_sidebar():
+def render_sidebar(): #Función para renderizar la barra lateral, que se muestra después de iniciar sesión, y que contiene el nombre del usuario, su rango, las opciones de navegación y el botón de cerrar sesión.
     with st.sidebar:
         st.markdown('<div class="osil-title" style="font-size:1.8rem">TIENDA OSIL</div>', unsafe_allow_html=True)
         st.markdown('<div class="osil-subtitle">Sistema de gestión</div>', unsafe_allow_html=True)
@@ -620,7 +611,7 @@ def render_sidebar():
 
         st.markdown("---")
         if st.button("Cerrar sesión", use_container_width=True):
-            for k in ["logged_in", "usuario", "rango", "intentos", "pagina"]:
+            for k in ["logged_in", "usuario", "rango", "intentos", "pagina"]: #al cerrar sesión, se eliminan todas las variables relacionadas con el estado del usuario y la página actual del estado de la sesión, para que al volver a la pantalla de login no quede ningún dato residual del usuario anterior.
                 if k in st.session_state:
                     del st.session_state[k]
             st.rerun()
@@ -631,7 +622,7 @@ def render_sidebar():
 # ─────────────────────────────────────────────
 
 def pagina_dashboard():
-    st.markdown('<div class="osil-title" style="font-size:2rem">Dashboard</div>', unsafe_allow_html=True)
+    st.markdown('<div class="osil-title" style="font-size:2rem">Dashboard</div>', unsafe_allow_html=True) #título principal de la página, con un tamaño de fuente más grande para destacar que es el dashboard
     st.markdown('<div class="osil-subtitle">Resumen general del sistema</div>', unsafe_allow_html=True)
     st.markdown("<br>", unsafe_allow_html=True)
 
@@ -639,13 +630,13 @@ def pagina_dashboard():
     ventas = leer_ventas()
 
     total_productos = len(inventario)
-    total_stock = sum(p["Cantidad"] for p in inventario)
+    total_stock = sum(p["Cantidad"] for p in inventario) #Suma la cantidad de cada producto en el inventario para obtener el total de unidades disponibles en stock.
     total_ventas = len(ventas)
     ingreso_total = sum(v["Total"] for v in ventas)
 
     c1, c2, c3, c4 = st.columns(4)
     with c1:
-        st.markdown(f'<div class="metric-box"><div class="metric-value">{total_productos}</div><div class="metric-label">Productos</div></div>', unsafe_allow_html=True)
+        st.markdown(f'<div class="metric-box"><div class="metric-value">{total_productos}</div><div class="metric-label">Productos</div></div>', unsafe_allow_html=True) #Muestra el total de productos registrados en el inventario, contando cada producto como una unidad, sin importar su cantidad.
     with c2:
         st.markdown(f'<div class="metric-box"><div class="metric-value">{total_stock}</div><div class="metric-label">Unidades en stock</div></div>', unsafe_allow_html=True)
     with c3:
@@ -653,7 +644,7 @@ def pagina_dashboard():
     with c4:
         st.markdown(f'<div class="metric-box"><div class="metric-value">${ingreso_total:,.0f}</div><div class="metric-label">Ingresos totales</div></div>', unsafe_allow_html=True)
 
-    st.markdown("<br>", unsafe_allow_html=True)
+    st.markdown("<br>", unsafe_allow_html=True) #salto de línea para separar las métricas del resto del contenido del dashboard
 
     col1, col2 = st.columns(2)
 
@@ -661,15 +652,15 @@ def pagina_dashboard():
         st.markdown("#### Stock bajo (≤ 5 unidades)")
         bajo = [p for p in inventario if p["Cantidad"] <= 5]
         if bajo:
-            df = pd.DataFrame(bajo)
-            st.dataframe(df, use_container_width=True, hide_index=True)
+            df = pd.DataFrame(bajo) #Crea un DataFrame de pandas a partir de la lista de productos con stock bajo, para mostrarlo en una tabla en Streamlit.
+            st.dataframe(df, use_container_width=True, hide_index=True) #Ajusta el ancho de las columnas al contenedor disponible y ocultando la columna de índice que pandas agrega por defecto, para que se vea más limpia y centrada en la información relevante del producto (nombre, cantidad, precio, fecha).
         else:
             st.info("No hay productos con stock bajo.")
 
     with col2:
         st.markdown("#### Últimas 5 ventas")
         if ventas:
-            df = pd.DataFrame(ventas[-5:][::-1])
+            df = pd.DataFrame(ventas[-5:][::-1]) #Toma las últimas 5 ventas de la lista de ventas (ventas[-5:]) y las invierte ([::-1]) para mostrar la venta más reciente primero en la tabla. Luego crea un DataFrame de pandas con esa información para mostrarla en Streamlit.
             st.dataframe(df, use_container_width=True, hide_index=True)
         else:
             st.info("No hay ventas registradas.")
@@ -692,7 +683,7 @@ def pagina_usuarios():
     with tab1:
         usuarios = leer_usuarios()
         if usuarios:
-            df = pd.DataFrame(usuarios)
+            df = pd.DataFrame(usuarios) #Crea un DataFrame de pandas a partir de la lista de usuarios leída del archivo, para mostrarla en una tabla en Streamlit.
             st.dataframe(df, use_container_width=True, hide_index=True)
         else:
             st.info("No hay usuarios.")
@@ -715,7 +706,7 @@ def pagina_usuarios():
             elif len(nueva_pass) < 8 or " " in nueva_pass:
                 st.error("La contraseña debe tener al menos 8 caracteres y sin espacios.")
             else:
-                ok, msg = registrar_usuario(nombre, nueva_pass, nuevo_rango)
+                ok, msg = registrar_usuario(nombre, nueva_pass, nuevo_rango) #Llama a la función registrar_usuario con el nombre de usuario, la contraseña y el rango seleccionados. La función devuelve un estado (ok) que indica si el registro fue exitoso o no, y un mensaje (msg) que contiene información sobre el resultado del registro, como si el usuario ya existe o si se registró correctamente.
                 if ok:
                     st.success(f"{msg}")
                 else:
@@ -761,9 +752,8 @@ def pagina_inventario():
         inventario = leer_inventario()
         if inventario:
             df = pd.DataFrame(inventario)
-            # Resaltar stock bajo
             st.dataframe(df, use_container_width=True, hide_index=True)
-            st.caption(f"Total: {len(inventario)} productos · {sum(p['Cantidad'] for p in inventario)} unidades")
+            st.caption(f"Total: {len(inventario)} productos · {sum(p['Cantidad'] for p in inventario)} unidades") #Muestra un pie de página debajo de la tabla con el total de productos (contando cada producto como una unidad) y el total de unidades disponibles en stock, sumando la cantidad de cada producto en el inventario.
         else:
             st.info("El inventario está vacío.")
 
@@ -773,9 +763,9 @@ def pagina_inventario():
         with col1:
             prod_nombre = st.text_input("Nombre del producto", key="inv_nombre", placeholder="Ej: manzana")
         with col2:
-            prod_cantidad = st.number_input("Cantidad", min_value=1, step=1, key="inv_cantidad")
+            prod_cantidad = st.number_input("Cantidad", min_value=1, step=1, key="inv_cantidad") #Input numérico para la cantidad del producto, con un valor mínimo de 1 y un paso de 1, para asegurar que se ingresen cantidades enteras positivas.
         with col3:
-            prod_precio = st.number_input("Precio unitario", min_value=0.01, step=0.01, format="%.2f", key="inv_precio")
+            prod_precio = st.number_input("Precio unitario", min_value=0.01, step=0.01, format="%.2f", key="inv_precio") #Input numérico para el precio unitario del producto, con un valor mínimo de 0.01 y un paso de 0.01, para asegurar que se ingresen precios positivos con dos decimales.
 
         if st.button("Guardar producto"):
             nombre = prod_nombre.strip().lower()
@@ -794,14 +784,14 @@ def pagina_inventario():
 
     with tab3:
         st.markdown("#### Buscar producto")
-        busqueda = st.text_input("Nombre del producto", key="busq_nombre", placeholder="Escriba el nombre...")
+        busqueda = st.text_input("Nombre del producto", key="busq_nombre", placeholder="Escriba el nombre del producto a buscar")
         if st.button("Buscar"):
             nombre = busqueda.strip().lower()
             inventario = leer_inventario()
-            resultado = next((p for p in inventario if p["Nombre"] == nombre), None)
+            resultado = next((p for p in inventario if p["Nombre"] == nombre), None) #Busca en la lista de productos del inventario un producto cuyo nombre coincida exactamente con el nombre ingresado en el campo de búsqueda. Si encuentra un producto que coincida, lo devuelve como resultado; si no encuentra ningún producto con ese nombre, devuelve None.
             if resultado:
                 c1, c2, c3, c4 = st.columns(4)
-                c1.metric("Producto", resultado["Nombre"].capitalize())
+                c1.metric("Producto", resultado["Nombre"].capitalize()) #Muestra el nombre del producto encontrado en una métrica, capitalizando la primera letra para que se vea más presentable.
                 c2.metric("Cantidad", resultado["Cantidad"])
                 c3.metric("Precio", f"${resultado['Precio']:.2f}")
                 c4.metric("Registrado", resultado["Fecha"])
@@ -831,20 +821,20 @@ def pagina_ventas():
             st.warning("No hay productos en inventario.")
             return
 
-        productos_disponibles = [p["Nombre"] for p in inventario if p["Cantidad"] > 0]
+        productos_disponibles = [p["Nombre"] for p in inventario if p["Cantidad"] > 0] #Crea una lista de nombres de productos que tienen una cantidad mayor a 0 en el inventario, para mostrar solo los productos disponibles para la venta en el selectbox.
 
         col1, col2 = st.columns(2)
         with col1:
             prod_venta = st.selectbox("Producto", productos_disponibles, key="venta_prod")
         with col2:
-            prod_info = next((p for p in inventario if p["Nombre"] == prod_venta), None)
-            stock_actual = prod_info["Cantidad"] if prod_info else 0
+            prod_info = next((p for p in inventario if p["Nombre"] == prod_venta), None) #Busca en la lista de productos del inventario el producto que coincida con el producto seleccionado en el selectbox. Si encuentra el producto, devuelve su información como un diccionario; si no lo encuentra devuelve None.
+            stock_actual = prod_info["Cantidad"] if prod_info else 0 #Si se encontró el producto en el inventario, se obtiene su cantidad actual para mostrarla como referencia al usuario al momento de ingresar la cantidad a vender. Si por alguna razón no se encuentra el producto, se asigna un stock_actual de 0 para evitar errores al intentar mostrar la cantidad disponible.
             st.markdown(f"**Stock disponible:** {stock_actual} unidades")
             cantidad_venta = st.number_input("Cantidad a vender", min_value=0, max_value=stock_actual, step=1, key="venta_cantidad")
 
         if prod_info:
             subtotal = prod_info["Precio"] * cantidad_venta
-            st.markdown(
+            st.markdown( #Es lo que hay dentro del recuadro e3 "Total a cobrar" 
                 f'<div class="metric-box" style="max-width:250px;">'
                 f'<div class="metric-value">${subtotal:,.2f}</div>'
                 f'<div class="metric-label">Total a cobrar</div></div>',
@@ -853,7 +843,7 @@ def pagina_ventas():
 
         st.markdown("<br>", unsafe_allow_html=True)
         if st.button("Confirmar venta", use_container_width=False):
-            resultado, total = registrar_venta(prod_venta, int(cantidad_venta))
+            resultado, total = registrar_venta(prod_venta, int(cantidad_venta)) #Llama a la función registrar_venta con el nombre del producto seleccionado y la cantidad a vender ingresada por el usuario. La función devuelve un estado (resultado) que indica si la venta se registró correctamente o si hubo algún problema (como stock insuficiente, producto no encontrado o inventario vacío), y el total de la venta si se registró correctamente.
             if resultado == "ok":
                 st.success(f"Venta registrada. Total: ${total:,.2f}")
                 st.balloons()
@@ -867,8 +857,8 @@ def pagina_ventas():
     with tab2:
         ventas = leer_ventas()
         if ventas:
-            df = pd.DataFrame(ventas[::-1])
-            df["Total"] = df["Total"].apply(lambda x: f"${x:,.2f}")
+            df = pd.DataFrame(ventas[::-1]) #Toma la lista de ventas y la invierte para mostrar la venta más reciente primero en la tabla. Luego crea un DataFrame de pandas con esa información para mostrarla en Streamlit.
+            df["Total"] = df["Total"].apply(lambda x: f"${x:,.2f}") #Formatea la columna "Total" del DataFrame para mostrar los valores como montos en pesos colombianos con dos decimales y separadores de miles, para que se vea más claro y profesional en la tabla de ventas.
             st.dataframe(df, use_container_width=True, hide_index=True)
         else:
             st.info("No hay ventas registradas.")
@@ -886,50 +876,50 @@ def pagina_reportes():
         st.info("No hay datos de ventas para mostrar reportes.")
         return
 
-    df_ventas = pd.DataFrame(ventas)
+    df_ventas = pd.DataFrame(ventas) #Crea un DataFrame de pandas a partir de la lista de ventas leída del archivo, para facilitar el análisis y la generación de gráficos en la página de reportes.
 
     # Agrupaciones
-    ventas_por_producto = df_ventas.groupby("Producto").agg(
-        Unidades=("Cantidad", "sum"),
+    ventas_por_producto = df_ventas.groupby("Producto").agg( #Agrupa las ventas por producto, sumando la cantidad de unidades vendidas y el total de ingresos para cada producto, para obtener un resumen de las ventas por producto que se puede mostrar en gráficos y tablas en la página de reportes.
+        Unidades=("Cantidad", "sum"), #Suma la cantidad de unidades vendidas para cada producto, para obtener el total de unidades vendidas por producto.
         Ingresos=("Total", "sum"),
-    ).reset_index().sort_values("Unidades", ascending=False)
+    ).reset_index().sort_values("Unidades", ascending=False) #Ordena los productos por la cantidad de unidades vendidas en orden descendente, para mostrar primero los productos más vendidos en los gráficos y tablas de la página de reportes.
 
-    ventas_por_fecha = df_ventas.groupby("Fecha").agg(
+    ventas_por_fecha = df_ventas.groupby("Fecha").agg( #Agrupa las ventas por fecha, sumando el total de ingresos para cada fecha, para obtener un resumen de los ingresos diarios que se puede mostrar en un gráfico de líneas en la página de reportes.
         Total=("Total", "sum")
-    ).reset_index().sort_values("Fecha")
+    ).reset_index().sort_values("Fecha") #Ordena las fechas en orden ascendente para mostrar la evolución de los ingresos a lo largo del tiempo de manera cronológica en el gráfico de líneas de la página de reportes.
 
-    DARK_BG  = "#161616"
-    ACCENT   = "#428af5"
-    SECONDARY= "#60a5fa"
+    DARK_BG  = "#161616" #Color de fondo oscuro para los gráficos, que se utiliza para crear un contraste visual con los colores de las barras, líneas y texto, y para darle un aspecto moderno y elegante a los gráficos en la página de reportes.
+    ACCENT   = "#428af5" #Color de acento para los elementos destacados en los gráficos, como las barras de los productos más vendidos o la línea de ingresos por fecha.
+    SECONDARY= "#60a5fa" #Color secundario para elementos complementarios en los gráficos, como las barras de productos menos vendidos o las áreas debajo de la línea de ingresos por fecha.
     TEXT     = "#f0ece0"
-    GRID     = "#2a2a2a"
-    matplotlib.rcParams.update({
+    GRID     = "#2a2a2a" #Color para las líneas de la cuadrícula en los gráficos, que ayuda a mejorar la legibilidad de los gráficos sin ser demasiado intrusivo, manteniendo la coherencia con el fondo oscuro y los colores de acento.
+    matplotlib.rcParams.update({ #Actualiza la configuración de Matplotlib para aplicar los colores y estilos definidos anteriormente a todos los gráficos generados en la página de reportes, asegurando una apariencia consistente y personalizada que se integra bien con el diseño general de la aplicación.
         "figure.facecolor": DARK_BG,
-        "axes.facecolor":   DARK_BG,
+        "axes.facecolor":   DARK_BG, 
         "axes.edgecolor":   GRID,
         "axes.labelcolor":  TEXT,
         "xtick.color":      TEXT,
         "ytick.color":      TEXT,
         "text.color":       TEXT,
         "grid.color":       GRID,
-        "font.family":      "monospace",
+        "font.family":      "monospace", #Fuente de letra monoespaciada para los gráficos, que le da un aspecto más técnico y uniforme a los textos dentro de los gráficos, como las etiquetas de los ejes, los títulos y los valores de las barras o líneas.
     })
 
     col1, col2 = st.columns(2)
 
     with col1:
         st.markdown("#### Top productos vendidos")
-        fig, ax = plt.subplots(figsize=(6, 4))
-        top = ventas_por_producto.head(6)
+        fig, ax = plt.subplots(figsize=(6, 4)) #Crea una figura y un eje para el gráfico de barras horizontales que muestra los productos más vendidos, con un tamaño de 6 pulgadas de ancho por 4 pulgadas de alto, para que se ajuste bien al espacio disponible en la columna del reporte.
+        top = ventas_por_producto.head(6) #Toma los primeros 6 productos del DataFrame de ventas por producto, que son los productos más vendidos debido al ordenamiento previo, para mostrar solo los productos más destacados en el gráfico de barras horizontales.
         bars = ax.barh(top["Producto"], top["Unidades"], color=ACCENT, height=0.6, edgecolor="none")
-        ax.set_xlabel("Unidades vendidas")
-        ax.invert_yaxis()
-        ax.grid(axis="x", alpha=0.3)
+        ax.set_xlabel("Unidades vendidas") #Etiqueta para el eje x del gráfico de barras horizontales.
+        ax.invert_yaxis() #Invierte el eje y para que el producto más vendido aparezca en la parte superior del gráfico, siguiendo la convención común de mostrar los valores más altos primero en gráficos de barras horizontales.
+        ax.grid(axis="x", alpha=0.3) #Muestra una cuadrícula en el eje x con transparencia de 0.3, que ayuda a mejorar la legibilidad de los valores en el gráfico.
         ax.spines[["top", "right", "left"]].set_visible(False)
         for bar in bars:
             ax.text(bar.get_width() + 0.2, bar.get_y() + bar.get_height() / 2,
-                    str(int(bar.get_width())), va="center", fontsize=9, color=TEXT)
-        plt.tight_layout()
+                    str(int(bar.get_width())), va="center", fontsize=9, color=TEXT) #Agrega etiquetas de texto al final de cada barra en el gráfico de barras horizontales, mostrando la cantidad de unidades vendidas para cada producto.
+        plt.tight_layout() #Ajusta el diseño del gráfico para que los elementos no se solapen y se vean bien distribuidos dentro del espacio asignado, especialmente considerando las etiquetas de texto agregadas al final de las barras.
         st.pyplot(fig)
         plt.close()
 
@@ -940,29 +930,29 @@ def pagina_reportes():
         top6 = ventas_por_producto.head(6)
         wedges, texts, autotexts = ax.pie(
             top6["Ingresos"],
-            labels=top6["Producto"],
-            autopct="%1.1f%%",
+            labels=top6["Producto"], #Etiquetas para cada porción del gráfico de pastel, que corresponden a los nombres de los productos más vendidos.
+            autopct="%1.1f%%", #Formato para mostrar el porcentaje de participación de cada producto en los ingresos totales, con un decimal y el símbolo de porcentaje.
             colors=colors_pie[:len(top6)],
-            startangle=140,
-            wedgeprops={"edgecolor": DARK_BG, "linewidth": 2},
+            startangle=140, #Ángulo de inicio para el gráfico de pastel, que determina la posición de la primera porción del pastel. En este caso, se establece en 140 grados para que las porciones se distribuyan de manera equilibrada y visualmente atractiva.
+            wedgeprops={"edgecolor": DARK_BG, "linewidth": 2}, #Propiedades para las porciones del gráfico de pastel, que incluyen un borde del mismo color que el fondo oscuro y un grosor de línea de 2, para crear un efecto de separación entre las porciones y mejorar la estética del gráfico.
         )
-        for t in texts + autotexts:
+        for t in texts + autotexts: #Configura el color y el tamaño de las etiquetas de texto en el gráfico de pastel, tanto las etiquetas de los productos como los porcentajes, para que sean legibles y se integren bien con el diseño general del gráfico.
             t.set_color(TEXT)
             t.set_fontsize(9)
-        plt.tight_layout()
+        plt.tight_layout() #Ajusta el diseño del gráfico para que los elementos no se solapen y se vean bien distribuidos dentro del espacio asignado.
         st.pyplot(fig)
         plt.close()
 
     st.markdown("#### Ingresos por fecha")
-    fig, ax = plt.subplots(figsize=(10, 3.5))
+    fig, ax = plt.subplots(figsize=(10, 3.5)) #Crea una figura y un eje para el gráfico de líneas que muestra la evolución de los ingresos por fecha, con un tamaño de 10 pulgadas de ancho por 3.5 pulgadas de alto, para que se ajuste bien al espacio disponible.
     ax.fill_between(ventas_por_fecha["Fecha"], ventas_por_fecha["Total"],
                     alpha=0.3, color=ACCENT)
     ax.plot(ventas_por_fecha["Fecha"], ventas_por_fecha["Total"],
-            color=ACCENT, linewidth=2, marker="o", markersize=5)
+            color=ACCENT, linewidth=2, marker="o", markersize=5) #Dibuja una línea con marcadores en el gráfico de líneas para mostrar la evolución de los ingresos por fecha, utilizando el color de acento definido anteriormente, con un grosor de línea de 2, y marcadores circulares de tamaño 5 para resaltar cada punto de datos en la línea.
     ax.set_ylabel("Ingresos ($)")
     ax.grid(alpha=0.3)
-    ax.spines[["top", "right"]].set_visible(False)
-    plt.xticks(rotation=30, ha="right")
+    ax.spines[["top", "right"]].set_visible(False) #Oculta los bordes superior y derecho del gráfico de líneas.
+    plt.xticks(rotation=30, ha="right") #Rota las etiquetas del eje x 30 grados y las alinea a la derecha para mejorar la legibilidad de las fechas, especialmente si hay muchas fechas o si los nombres de las fechas son largos.
     plt.tight_layout()
     st.pyplot(fig)
     plt.close()
@@ -971,17 +961,17 @@ def pagina_reportes():
 
     with col3:
         st.markdown("#### Productos con stock bajo (≤ 5)")
-        bajo = [p for p in inventario if p["Cantidad"] <= 5]
+        bajo = [p for p in inventario if p["Cantidad"] <= 5] #Crea una lista de productos que tienen una cantidad menor o igual a 5 en el inventario.
         if bajo:
             df_bajo = pd.DataFrame(bajo)
-            st.dataframe(df_bajo, use_container_width=True, hide_index=True)
+            st.dataframe(df_bajo, use_container_width=True, hide_index=True) #Muestra una tabla con los productos que tienen stock bajo.
         else:
             st.success("Todos los productos tienen stock suficiente.")
 
     with col4:
         st.markdown("#### Resumen financiero")
         total_ingresos = df_ventas["Total"].sum()
-        producto_estrella = ventas_por_producto.iloc[0]["Producto"] if not ventas_por_producto.empty else "—"
+        producto_estrella = ventas_por_producto.iloc[0]["Producto"] if not ventas_por_producto.empty else "—" #Obtiene el nombre del producto más vendido (producto estrella)del DataFrame de ventas por producto, tomando la primera fila (iloc[0]) que corresponde al producto con más unidades vendidas debido al ordenamiento previo. Si el DataFrame de ventas por producto está vacío, se asigna un guion ("—") como valor predeterminado para indicar que no hay datos disponibles.
         unidades_estrella = ventas_por_producto.iloc[0]["Unidades"] if not ventas_por_producto.empty else 0
 
         st.markdown(
@@ -1003,7 +993,7 @@ def pagina_reportes():
 # ─────────────────────────────────────────────
 
 def main():
-    if not st.session_state.logged_in:
+    if not st.session_state.logged_in: #Si el usuario no ha iniciado sesión, se muestra la pantalla de login y se detiene la ejecución del resto de la función main, para que no se renderice ninguna otra parte de la aplicación hasta que el usuario inicie sesión correctamente.
         pantalla_login()
         return
 
